@@ -11,9 +11,10 @@ body {
 }
 
 nav {
-    width: 25%;
+    width: 350px;
     height: 100vh;
-    background-image: url(../images/gradient-background.jpeg);
+    background-color: #0e1113;
+    /* background-image: url(../images/gradient-background.jpeg); */
     font-weight: bold;
     /* position: fixed; */
 }
@@ -25,7 +26,7 @@ nav {
     padding-top: 2rem;
 }
 .logo {
-    color: white;
+    color: #bea9d0;
     text-align: center;
     padding: 2rem;
     font-size: 3rem;
@@ -34,6 +35,8 @@ nav {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 1px solid none;
+    object-fit: cover;
 }
 
 .nav_links {
@@ -47,38 +50,134 @@ nav {
 .nav_links > li, a {
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: #bea9d0;
+    border-radius: 2px;
     font-size: 1.5rem;
 }
 
 .nav_links > li > a:hover {
     cursor: pointer;
-    color: #000;
+    color: #bea9d0;
+    transition: all 0.5s;
 }
 
 .nav_footer {
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 9rem;
     font-size: 2rem;
     gap: 1.5rem;
     color: #fff;
 }
-
+.nav_footer > i {
+    color: #bea9d0;
+}
 .nav_footer > i:hover { 
     cursor: pointer;
-    color: #000;
+    color: #70617c;
+    transition: all 0.5s;
 }
 
 main {
-    width: 75%;
+    width: 100vw;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(../images/gradient-background.jpeg);
 }
 .about_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 500px;
+    margin-top: 3rem;
     height: 300px;
     padding: 2rem;
+    color: #bea9d0;
+    background-color: #0e1113;
+    border-radius: 10px;
+} 
+#my_image {
+    display: none;
+}
+.toggle_menu {
+    display: none;
+}
+.nav_dropdown {
+    display: none;
+}
+
+/* Mobile responsive design */
+
+@media screen and (max-width: 818px){
+    .about_section{
+        margin-top: 6rem;
+        align-items: center;
+        min-width: 408px;
+        max-width: 500px;
+        height: 400px;
+    }
+    #my_image {
+        display: block;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
+        position: fixed;
+        z-index: 1;
+    }
+    .nav_top_section{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    #nav_image {
+        display: none;
+    }
+    .nav_links {
+        display: none;
+    }
+    .logo {
+        padding: 0;
+    }
+    main {
+        height: 100vh;
+        margin-top: 2rem;
+    }
+    .nav_footer {
+        padding: 0;
+    }
+    .nav_dropdown {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        display: block;
+        position: absolute;
+        right: 8rem;
+        top: 5rem;
+    }
+    .nav_dropdown > li {
+        list-style: none;
+        text-decoration: none;
+    }
+    .toggle_menu{
+        display: block;
+        color: #bea9d0;
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+
+    @media screen and (max-width: 536px){
+        .nav_footer{
+            display: none;
+        }
+    }
 }
