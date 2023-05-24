@@ -97,9 +97,6 @@ main {
     background-image: url(../images/gradient-background.jpeg);
     color: #fff;
 }
-#content_section {
-    margin: 2rem 4rem;
-}
 #first_section {
     height: 45%;
     width: 100%;
@@ -141,7 +138,7 @@ main {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 2rem;
-    max-width: 45rem;
+    max-width: 75rem;
     min-width: 35rem;
     text-align: center;
 }
@@ -211,7 +208,7 @@ main {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-@media screen and (max-width: 963px) {
+@media screen and (max-width: 1525px) {
     #skills {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -315,7 +312,8 @@ main {
             text-align: center;
         }
     }
-    @media screen and (max-width: 600px){
+    
+    @media screen and (max-width: 718px){
         .nav_footer{
             display: none;
         }
