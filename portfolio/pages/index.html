@@ -8,34 +8,17 @@
     <link href="
     https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.min.css
     " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="../css/index.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav_top_section">
-            <img class="logo_image" id="nav_image" src="../images/amir_selfie.jpg">
-            <h1 class="logo">Amir Ali</h1>
-        </div>
-        <ul class="nav_links">
-            <li>
-                <a href="#"><i class="bi bi-house-fill"></i> Home</a>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-tools"></i> Projects</a>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-person-badge-fill"></i> Contact</a>
-            </li>
-        </ul>
-        <div class="nav_footer">
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-github"></i>
-        </div>
-        <div class="toggle_menu">
-            <i class="bi bi-list" id="toggle"></i>
-        </div>
-        <div class="dropdown">
-            <ul class="nav_dropdown">
+    <div class="nav-container">
+        <nav>
+            <div class="nav_top_section">
+                <img class="logo_image" id="nav_image" src="../images/amir_selfie.jpg">
+                <h1 class="logo">Amir Ali</h1>
+            </div>
+            <ul class="nav_links">
                 <li>
                     <a href="#"><i class="bi bi-house-fill"></i> Home</a>
                 </li>
@@ -46,21 +29,117 @@
                     <a href="#"><i class="bi bi-person-badge-fill"></i> Contact</a>
                 </li>
             </ul>
+            <div class="nav_footer">
+                <a href="https://www.linkedin.com/in/amir-satele-ali-4ab364268" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/satele99?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+            </div>
+            <div class="toggle_menu">
+                <i class="bi bi-list" id="toggle"></i>
+            </div>
+        </nav>
+        <div class="dropdown">
+            <ul class="nav_dropdown">
+                <li>
+                    <a href="#about-me" target="_blank"><i class="bi bi-house-fill"></i> Home</a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-tools"></i> Projects</a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-person-badge-fill"></i> Contact</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/amir-satele-ali-4ab364268" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/satele99?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
     <main>
-        <div class="about_section">
-            <img class="logo_image" id="my_image" src="../images/amir_selfie.jpg">
-            <h1>Hello! My name is Amir.</h1>
-            <p>
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit. 
-                Praesent vitae accumsan mauris. 
-                Fusce metus magna, malesuada a purus at, pretium cursus neque. 
-                Donec sed ligula ac purus tempor pharetra non quis ipsum.
-            </p>
+        <div id="content_section">
+            <div id="first_section">
+                <div class="about_section" id="about-me">
+                    <img class="logo_image" id="my_image" src="../images/amir_selfie.jpg">
+                    <div class="title-head">
+                        <p style="font-size: 25px; font-style: italic;">My name is</p>
+                        <h1 style="font-size: 55px; font-weight: bold; font-style: italic;"><span style="color: rgb(93, 61, 134);">Amir Ali</span></h1>
+                    </div>
+                    <p style="font-size: 25px; font-weight: bold;">
+                        I am a highly motivated and detail-oriented <span span style="color: rgb(93, 61, 134); font-style: italic;">software developer</span>. I am passionate about developing
+                        innovative solutions to complex problems. I am also dedicated to learning and expanding my skill
+                        set. I have experience working on projects both individually and in a team setting, and am excited
+                        to bring my enthusiasm and strong work ethic to a new employer as a software developer.
+                    </p>
+                </div>
+            </div>
+            <div id="second_section">
+                <div class="about_section" style="text-align: center; max-width: none;">
+                    <h1 style="font-size: 55px; font-weight: bold; text-align: center; color: rgb(93, 61, 134);">My Skills</h1>
+                    <div id="skills">
+                        <div class="grid-box"><img class="image-box" src="../images/html-2-logo.png">HTML</div>
+                        <div class="grid-box"><img class="image-box" src="../images/css-2-logo.png">CSS</div>
+                        <div class="grid-box"><img class="image-box" src="../images/js-2-logo.png">JS</div>
+                        <div class="grid-box"><img class="image-box" src="../images/nodejs-2-logo.png">Node.js</div>
+                        <div class="grid-box"><img class="image-box" src="../images/Expressjs.png">Exress.js</div>
+                        <div class="grid-box"><img class="image-box" src="../images/sql-server-icon-png-29.png">SQL</div>
+                        <div class="grid-box"><img class="image-box" src="../images/sequelize-logo-png-transparent2.png">Sequelize</div>
+                        <div class="grid-box"><img class="image-box" src="../images/react5logo.png">React.js</div>
+                        <div class="grid-box"><img class="image-box" src="../images/redux-2-logo.png">Redux</div>
+                        <div class="grid-box"><img class="image-box" src="../images/58482deccef1014c0b5e4a64.png">Socket.io</div>
+                    </div>
+                </div>
+            </div>
+            <div id="third_section">
+                <div style="width: 100%; height: 100%; display: flex; flex-direction: column; gap: 4rem;">
+                    <h1 style="font-size: 55px; font-weight: bold; text-align: center; color: rgb(93, 61, 134);">My Projects</h1>
+                    <div class="projects_container">
+                        <div class="project_card">
+                            <h4>Tic-Tac-Toe</h4>
+                            <p style="width: 225px;">
+                                A complete game of tic tac toe versus the computer! Created using Vanilla Javascript and minimal HTML and CSS.
+                            </p>
+                            <div class="project_btn">
+                                <a href="https://satele99.github.io/tic-tac-toe-project/" target="_blank"><button class="btn btn-light">Live Demo</button></a>
+                                <a href="https://github.com/satele99/tic-tac-toe-project" target="_blank"><button class="btn btn-light">GitHub</button></a>
+                            </div>
+                        </div>
+                        <div class="project_card">
+                            <h4>Book Archive</h4>
+                            <p style="width: 225px;">
+                                I put my knowledge to the test by creating an archive to store all the books I have or will have read. Using HTML, CSS, JS and a postgres database!
+                            </p>
+                            <div class="project_btn">
+                                <a href="https://github.com/satele99/library" target="_blank"><button class="btn btn-light">Live Demo</button></a>
+                                <a href="https://github.com/satele99/library" target="_blank"><button class="btn btn-light">GitHub</button></a>
+                            </div>
+                        </div>
+                        <div class="project_card">
+                            <h4>Budgeting App</h4>
+                            <p style="width: 225px;">
+                                My first react project! This app utilizes Redux for state management, and is connected to a postgres database via Sequelize!
+                            </p>
+                            <div class="project_btn">
+                                <a href="https://github.com/satele99/react-expense-app" target="_blank"><button class="btn btn-light">Live Demo</button></a>
+                                <a href="https://github.com/satele99/react-expense-app" target="_blank"><button class="btn btn-light">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: center; width: 100%;">
+                        <div id="last_project_card" class="project_card">
+                            <h4>Social Society</h4>
+                            <p style="width: 225px;">
+                                Second Full-Stack Project! THis was a group project that utilized React, Redux, Express.js, Sequelize, and Socket.io!
+                            </p>
+                            <div class="project_btn">
+                                <a href="https://github.com/olyviahix/Capstone-Project" target="_blank"><button class="btn btn-light">Live Demo</button></a>
+                                <a href="https://github.com/olyviahix/Capstone-Project" target="_blank"><button class="btn btn-light">GitHub</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
-<script src="../js/main.js"
+<script src="../js/main.js"></script>
 </html>
