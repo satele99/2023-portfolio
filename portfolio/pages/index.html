@@ -23,15 +23,17 @@
                     <a href="#first_section"><i class="bi bi-house-fill"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#second_section"><i class="bi bi-tools"></i> Projects</a>
+                    <a href="#second_section"><i class="bi bi-gear-wide"></i> Skills</a>
                 </li>
                 <li>
-                    <a href="#third_section"><i class="bi bi-person-badge-fill"></i> Contact</a>
+                    <a href="#third_section"><i class="bi bi-tools"></i> Projects</a>
+                </li>
+                <li>
+                    <a href="#fourth_section"><i class="bi bi-person-badge-fill"></i> Contact</a>
                 </li>
             </ul>
             <div class="nav_footer">
-                <a href="https://www.linkedin.com/in/amir-satele-ali-4ab364268" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/satele99?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                <p>Amir Ali © 2023</p>
             </div>
             <div class="toggle_menu">
                 <i class="bi bi-list" id="toggle"></i>
@@ -40,18 +42,21 @@
         <div class="dropdown">
             <ul class="nav_dropdown">
                 <li>
-                    <a href="#about-me" target="_blank"><i class="bi bi-house-fill"></i> Home</a>
+                    <a href="#first_section"><i class="bi bi-house-fill"></i> Home</a>
                 </li>
                 <li>
-                    <a href="#second_section"><i class="bi bi-tools"></i> Projects</a>
+                    <a href="#second_section"><i class="bi bi-gear-wide"></i> Skills</a>
                 </li>
                 <li>
-                    <a href="#third_section"><i class="bi bi-person-badge-fill"></i> Contact</a>
+                    <a href="#third_section"><i class="bi bi-tools"></i> Projects</a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/amir-satele-ali-4ab364268" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/satele99?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="#fourth_section"><i class="bi bi-person-badge-fill"></i> Contact</a>
                 </li>
+                <li>
+                    <p style="font-size: 15px; font-weight: 400;">Amir Ali © 2023</p>
+                </li>
+                
             </ul>
         </div>
     </div>
@@ -70,6 +75,11 @@
                         set. I have experience working on projects both individually and in a team setting, and am excited
                         to bring my enthusiasm and strong work ethic to a new employer as a software developer.
                     </p>
+                    <div class="resources">
+                        <a class="btn btn-light submit_btn" href="../files/Amir Ali Resume 2023.docx (1).pdf" download="Amir Ali Resume(pdf)">Download my Resume</a>
+                        <a class="social_links" href="https://www.linkedin.com/in/amir-satele-ali-4ab364268" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a class="social_links" href="https://github.com/satele99?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
                 </div>
             </div>
             <div id="second_section">
@@ -136,6 +146,27 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div id="fourth_section">
+                <div class="contact_header">
+                    <h1 style="font-size: 55px; font-weight: bold; text-align: center; color: rgb(93, 61, 134);">Get in Touch!</h1>
+                    <h3 style="font-style: italic; font-weight: 400;">Lets work together!</h3>
+                    <p><i class="bi bi-envelope-at-fill mail"></i> Email me at: <span id="email" onclick="copyEmail()">satele.works@gmail.com</span> (⬅️ click to copy email)</p>
+                </div>
+                <div class="contact_form">
+                    <h4 style="margin-top: 2rem; color: #fff;">Send me a message. 🚀</h4>
+                    <form id="contact" style="width: 80%; display: flex; flex-direction: column; gap: .8rem;">
+                        <input type="text" aria-label="First name" placeholder="First Name" class="form-control" required>
+                        <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control" required>
+                        <input type="email" aria-label="Email" placeholder="Email address" class="form-control" required>
+                        <input type="text" aria-label="Message subject" placeholder="Subject" class="form-control" required>
+                        <div style="margin-top: 2rem; width: 100%;">
+                            <h6>Tell me what brings you here!</h6>
+                            <textarea id="contact_text" required></textarea>
+                        </div>
+                    </form>
+                    <button class="btn btn-light submit_btn" type="submit" form="contact">Submit</button>
                 </div>
             </div>
         </div>

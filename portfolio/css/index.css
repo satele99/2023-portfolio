@@ -113,6 +113,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
     /* max-width: 45rem;
     min-width: 25rem; */
 }
@@ -122,6 +123,66 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#fourth_section {
+    width: 100%;
+    height: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 45%;
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 50%;
+    height: 45%;
+}
+#email {
+    text-decoration: underline;
+}
+#email:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+.submit_btn {
+    width: 12rem;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(93, 61, 134) !important;
+    border: none;
+    border-radius: 10px;
+}
+.submit_btn:hover {
+    cursor: pointer;
+    background-color: rgb(49, 30, 73) !important;
+    color: #fff;
+}
+#contact_text {
+    width: 100%;
+    height: 100%;
+    max-height: 143px;
+    max-width: 487px;
+    padding: 10px;
+    resize: both;
+    border: none;
+    border-radius: 3px;
+}
+.mail {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+    background-color: #70617c;
+    border-radius: 100%;
 }
 .about_section {
     display: flex;
@@ -205,6 +266,22 @@ main {
 .nav_dropdown {
     display: none;
 }
+.resources {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social_links {
+    color: #fff;
+    font-size: 2rem;
+}
+.social_links:hover { 
+    cursor: pointer;
+    color: #70617c;
+    transition: all 0.5s;
+}
 
 /* Mobile responsive design */
 @media screen and (max-width: 1167px) {
@@ -285,7 +362,7 @@ main {
         z-index: 1;
     }
     .nav_dropdown.open {
-        height: 300px;
+        height: 370px;
       }
     .nav_dropdown > li, a {
         list-style: none;
@@ -295,6 +372,12 @@ main {
         justify-content: center;
         padding: 0.7rem;
         color: #fff;
+    }
+    .nav_dropdown.open > a:hover { 
+        text-decoration: none;
+        cursor: pointer;
+        color: #70617c;
+        transition: all 0.5s;
     }
     .toggle_menu{
         display: block;
@@ -314,6 +397,14 @@ main {
         #last_project_card {
             width: 250px;
             text-align: center;
+        }
+        #fourth_section {
+            flex-direction: column;
+            height: 30%;
+        }
+        .contact_header {
+            height: 25%;
+            max-width: 100%;
         }
     }
     
