@@ -105,7 +105,7 @@ main {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 #second_section {
     height: 50%;
@@ -414,7 +414,7 @@ main {
         }
         #skills{
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
+            gap: 0.1rem;
         }
         .about_section {
             /* margin-bottom: 15rem; */
@@ -425,5 +425,11 @@ main {
             left: 2rem;
             width: unset
         }
+    }
+}
+@media screen  and (max-height: 400px) {
+    .resources {
+        display: flex;
+        flex-direction: column;
     }
 }

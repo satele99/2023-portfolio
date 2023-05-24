@@ -156,14 +156,16 @@
                 </div>
                 <div class="contact_form">
                     <h4 style="margin-top: 2rem; color: #fff;">Send me a message. 🚀</h4>
-                    <form id="contact" style="width: 80%; display: flex; flex-direction: column; gap: .8rem;">
-                        <input type="text" aria-label="First name" placeholder="First Name" class="form-control" required>
-                        <input type="text" aria-label="Last name" placeholder="Last Name" class="form-control" required>
-                        <input type="email" aria-label="Email" placeholder="Email address" class="form-control" required>
-                        <input type="text" aria-label="Message subject" placeholder="Subject" class="form-control" required>
+                    <form id="contact" style="width: 80%; display: flex; flex-direction: column; gap: .8rem;" action="https://formsubmit.co/satele.works@gmail.com" method="POST">
+                        <input type="text" aria-label="First name" name="firstName" placeholder="First Name" class="form-control" required>
+                        <input type="text" aria-label="Last name" name="lastName" placeholder="Last Name" class="form-control" required>
+                        <input type="email" aria-label="Email" name="email" placeholder="Email address" class="form-control" required>
+                        <input type="text" aria-label="Message subject" name="_subject" placeholder="Subject" class="form-control" required>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/portfolio/pages/index.html#fourth_section">
                         <div style="margin-top: 2rem; width: 100%;">
                             <h6>Tell me what brings you here!</h6>
-                            <textarea id="contact_text" required></textarea>
+                            <textarea id="contact_text" form="contact" name='senderMsg' required></textarea>
                         </div>
                     </form>
                     <button class="btn btn-light submit_btn" type="submit" form="contact">Submit</button>
