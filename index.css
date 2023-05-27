@@ -10,6 +10,7 @@
 
 body {
     display: flex;
+    overflow-x: hidden !important;
 }
 
 .nav-container {
@@ -357,7 +358,8 @@ main {
         display: none;
     }
     .nav_dropdown {
-        background: rgba(255, 255, 255, 0.1);
+        /* background-image: url(./images/gradient-background.jpeg); */
+        background-color: #70617c;
         backdrop-filter: blur(15px);
         display: block;
         position: absolute;
