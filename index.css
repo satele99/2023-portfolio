@@ -12,6 +12,7 @@ html {
 }
 body {
     display: flex;
+    position: relative;
 }
 
 .nav-container {
