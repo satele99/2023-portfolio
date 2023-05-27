@@ -12,6 +12,7 @@ html {
 }
 body {
     display: flex;
+    overflow-x: hidden !important;
     position: relative;
 }
 
